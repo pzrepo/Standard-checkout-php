@@ -13,7 +13,7 @@ $TMPL_AMOUNT = "5.00";//your script should substitute the amount in that customi
 $merchantTransactionId = "4125896377"; //your script should substitute the order id here
 $orderDescription = "order123items"; //your script should substitute detailed description of your order here ( This field is not mandatory )
 $merchantRedirectUrl = "http://localhost:8081/StdKit/redirecturl.php"; //You need to change the URL as per your website and the location where you have kept provided redirecturl.php file
-$key = "IFOXQc43C06zTrrHI9RiUXKcsoZMfdnk"; //put in the 32 bit alphanumeric key in the quotes provided here
+$key = "9P8vdzPP4oL9BeDgko3ti6HGnou59LEB"; //put in the 32 bit alphanumeric key in the quotes provided here
 
 $country = "IN";//your script should substitute the customer's country code
 $TMPL_CURRENCY = "EUR";//your script should substitute the currency symbol in which you want to display amount
