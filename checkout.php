@@ -6,8 +6,8 @@
 //Below are the constants this program needs
 //replace them with your values
 
-$memberId = "10469"; //put in your merchantId you received after signing up
-$totype = "pz"; // put you partner name
+$memberId = "11344"; //put in your merchantId you received after signing up
+$totype = "docspartner"; // put you partner name
 $amount = "1.00"; //your script should substitute the amount here
 $TMPL_AMOUNT = "5.00";//your script should substitute the amount in that customized currency
 $merchantTransactionId = "4125896377"; //your script should substitute the order id here
@@ -29,8 +29,8 @@ $ip = "127.0.0.1"; // your script should replace it with your ip address
 $reservedField1 = ""; //As of now this field is reserved and you need not put anything
 $reservedField2 = ""; //As of now this field is reserved and you need not put anything
 $terminalid="";   //terminalid if provided
-$paymentMode=""; //payment type as applicable Credit Cards = 1, Vouchers = 2,  Ewallet = 3
-$paymentBrand=""; //card type as applicable Visa = 1;MasterCard=2;Dinners=3;Amex=4;Disc=5;CUP=6;MyMonedero=7
+$paymentMode=""; //payment type as applicable Credit Cards = CC, Vouchers = PV,  Ewallet = EW, NetBanking = NB
+$paymentBrand=""; //card type as applicable Visa = VISA; MasterCard=MC; Dinners= DINER; Amex= AMEX; Disc= DISC; CUP=CUP
 $customerId="44444"; 
 $checksum = "";
 $checksum = getchecksum($memberId, $totype, $amount, $merchantTransactionId, $merchantRedirectUrl, $key);
