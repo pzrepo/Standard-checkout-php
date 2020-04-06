@@ -1,7 +1,7 @@
 <?php
-function verifychecksum($trackingid, $merchantTransactionId, $amount, $status, $checksum, $key)
+function verifychecksum($paymentId, $merchantTransactionId, $amount, $status, $checksum, $key)
 {
-$str = $trackingid ."|". $merchantTransactionId . "|" . $amount . "|" . $status . "|" . $key;
+$str = $paymentId ."|". $merchantTransactionId . "|" . $amount . "|" . $status . "|" . $key;
 $generatedCheckSum = MD5($str);
 if ($generatedCheckSum==$checksum)
 {
