@@ -1,7 +1,7 @@
 <?php
-function verifychecksum($trackingid, $description, $amount, $status, $checksum, $key)
+function verifychecksum($trackingid, $merchantTransactionId, $amount, $status, $checksum, $key)
 {
-$str = $trackingid ."|". $description . "|" . $amount . "|" . $status . "|" . $key;
+$str = $trackingid ."|". $merchantTransactionId . "|" . $amount . "|" . $status . "|" . $key;
 $generatedCheckSum = MD5($str);
 if ($generatedCheckSum==$checksum)
 {
@@ -13,9 +13,9 @@ return "false";
 }
 }
 
-function getchecksum($memberid, $totype, $amount, $description, $redirecturl, $key)
+function getchecksum($memberid, $totype, $amount, $merchantTransactionId, $redirecturl, $key)
 {
-$str = $memberid . "|" . $totype . "|" . $amount . "|" . $description . "|" . $redirecturl . "|" . $key;
+$str = $memberid . "|" . $totype . "|" . $amount . "|" . $merchantTransactionId . "|" . $redirecturl . "|" . $key;
 $generatedCheckSum = MD5($str);
 return $generatedCheckSum;
 }
